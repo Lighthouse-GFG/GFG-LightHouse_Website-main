@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "SIH_2023_LightHouse_Website-main"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "SIH_2023_LightHouse_Website-main-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]

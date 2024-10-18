@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <title>Travel Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="/css/font-awesome.min.css" />
+
+    <!--owl carousel-->
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <link type="image" rel="icon" href="images/holyday-bg.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+        <!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+
+<!-- Firebase Authentication -->
+<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"></script>
+
+
+</head>
+
+<body>
+    
+
+    <div id="arrow">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </div>
+
+    <nav>
+        <div class="container">
+          <div class="menu-par">
+            <div class="logo-par">
+              <h2>LIGHTHOUSE</h2>
+            </div>
+            <div class="nav">
+              <ul>
+                <li><a class="menu_hover" href="#">Home</a></li>
+                <li><a class="menu_hover" href="#welcome_Sec">Travel</a></li>
+                <li><a class="menu_hover" href="#gallery">Gallery</a></li>
+                <li><a class="menu_hover" href="#footer">About Us</a></li>
+                <li><a class="menu_hover" href="Sign_in.html">Sign In</a></li>
+                <li><a class="menu_hover" href="Sign_up.html">Sign Up</a></li>
+                <!-- <li><a class="menu_hover" href="#" id="signOut">Sign Out</a></li> -->
+
+              </ul>
+            </div>
+            <div class="toggle-btn">
+              <i class="fa fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+
+    <header> 
+        <div class="conatiner">
+            <div class="home_header_info">
+                <h1 class="typewrite" data-period="2000" data-type='[ "Way for the Wanderers.", "Don’t be a tourist, be a traveler." ]'></h1>
+               
+            </div>
+        </div>
+        <div class="video">
+            <video id="video" autoplay loop muted>
+                <source type="video/mp4" src="images/videoplayback.mp4"/>
+            </video>
+        </div>
+    </header>
+
+    <Section id="welcome_Sec">
+        <div class="container">
+            <h2><span>Team LightHouse presents you Iconic places to visit in every particular states</span></h2>
+        </div>
+    </Section>
+
+    <Section id="slides_parent">
+        <div class="container">
+            <div class="slides">
+                <div class="slide_1 slide_4">
+                    <div class="slide_info">
+                        <a href="STATES/RAJASTHAN/rajasthan.html">
+                        <p>RAJASTHAN</p>
+                    </a>
+                    </div>
+                </div>
+                <div class="slide_1 slide_2">
+                    
+                    <div class="slide_info">
+                        <a href="STATES/MAHARASHTRA/index.html">
+                       <p>MAHARASHTRA</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide_1 slide_3">
+                    <div class="slide_info">
+                        <a href="STATES/DELHI/DELHI.html">
+                        <p>DELHI</p></a>
+                    </div>
+                </div>
+
+    </Section>
+
+    <section id="explore-fiji">
+        <div class="container">
+            <div class="explore-content-par">
+                <div class="explore-info">
+                    <h3>Contact Us </h3>
+                    <div id="clockdiv">
+                        <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                        </div>
+                        <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                        </div>
+                        <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                        </div>
+                        <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="counter-form">
+                    <form action="/action_page.php">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <select id="country" name="country">
+                            <option value="delhi">DELHI </option>
+                            <option value="gujarat">MAHARASHTRA</option>
+                            <option value="opiton">RAJASTHAN</option>
+                            <option value="opiton">HIMACHAL PRADESH</option>
+                            <option value="opiton">GOA</option>
+                        </select>
+                        <textarea id="subject" name="subject" placeholder="YOUR DREAM PLACE.." style="height:200px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div align="center">
+                    <button class="btn filter-button active" data-filter="all">All</button>
+                    <button class="btn filter-button" data-filter="hdpe">Gujarat</button>
+                    <button class="btn filter-button" data-filter="sprinkle">Rajasthan</button>
+                    <button class="btn filter-button" data-filter="spray">Goa</button>
+                </div>
+
+                <div class="filter-gal-par">
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="images/Sabarmati Ashram.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="images/hawamahal.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="images/Gir Forest.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="images/BAGA BEACH.jpeg.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="images/Junagarh.jpg" class="img-responsive">
+                    </div>
+                    <!--goa ka pic-->
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="images/GOA.webp" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="images/Sabarmati Ashram.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="images/Dwarkadhish Temple.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="images/ANJUNA BEACH.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="images/SOMNATH TEMPLE.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                        <img src="images/rajaaaaa.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                        <img src="images/dudhsagar.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="blog">
+        <div class="container">
+            <h3>TOURIST HOTSPOT</h3>
+            <div id="blog-par">
+                <div class="blog-content">
+                    <div class="blog-img">
+                        <img class="img-responsive" src="images/tajmahal.jpg" />
+                    </div>
+                    <div class="blog-info">
+                        <h4>Taj Mahal</h4>
+                        <p>The Taj Mahal is a must-see on most India itineraries, and it will probably be the first stop on your Agra tour</p>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-img">
+                        <img class="img-responsive" src="images/redfort.webp" />
+                    </div>
+                    <div class="blog-info">
+                        <h4>The Red Fort</h4>
+                        <p>New Delhi’s colossal, crescent-shaped Red Fort, named after the stunning red sandstone that was used in its construction</p>
+                    </div>
+                </div>
+            </div>
+            <div id="blog-par">
+                <div class="blog-content">
+                    <div class="blog-img">
+                        <img class="img-responsive" src="images/gateway.jpg" />
+                    </div>
+                    <div class="blog-info">
+                        <h4> The Gateway of India, Mumbai</h4>
+                        <p>Standing an impressive 85 feet tall and located on the tip of Apollo Bunder,a must-see when in Mumbai.</p>
+                    </div>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-img">
+                        <img class="img-responsive" src="images/golden.jpg" />
+                    </div>
+                    <div class="blog-info">
+                        <h4>The Golden Temple of Amritsar</h4>
+                        <p>The holiest of India's many Sikh shrines Founded in 1577 by Ram Das,Amritsar is an important hub of Sikh history and culture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+        <!-- New Footer Section -->
+<!-- Enhanced Footer Section -->
+<footer class="footer" id="footer">
+    <div class="footer-content">
+        <div class="footer-top">
+            <!-- Logo and Description -->
+            <div class="footer-section about" data-aos="fade-right">
+                <h2 class="logo-text">LIGHT<span>HOUSE</span></h2>
+                <br>
+                <p>
+                    Leading the way in showcasing iconic destinations. Explore the world with us 
+                </p>
+                <br>
+                <div class="contact">
+                    <span><i class="fa fa-phone"></i> &nbsp; +1-555-555-5555</span>
+                    <span><i class="fa fa-envelope"></i> &nbsp; info@lighthouse.com</span>
+                </div>
+                <div class="socials">
+                    <a href="https://www.instagram.com/team.lighthouse/"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            <!-- Quick Links -->
+            <div class="footer-section links" data-aos="fade-up">
+                <h3>Quick Links</h3>
+                <br>
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#welcome_Sec">
+                        <li>Travel</li>
+                    </a>
+                    <a href="#gallery">
+                        <li>Gallery</li>
+                    </a>
+                    <a href="#explore-fiji">
+                        <li>About Us</li>
+                    </a>
+                </ul>
+            </div>
+            <!-- Destinations -->
+            <div class="footer-section links" data-aos="fade-up">
+                <h3>Destinations</h3>
+                <br>
+                <ul>
+                    <a href="STATES/RAJASTHAN/rajasthan.html">
+                        <li>Rajasthan</li>
+                    </a>
+                    <a href="STATES/MAHARASHTRA/index.html">
+                        <li>Maharashtra</li>
+                    </a>
+                    <a href="STATES/DELHI/DELHI.html">
+                        <li>Delhi</li>
+                    </a>
+                    <a href="#">
+                        <li>Goa</li>
+                    </a>
+                </ul>
+            </div>
+            <!-- Newsletter Subscription -->
+            <div class="footer-section subscribe" data-aos="fade-left">
+                <h3>Newsletter</h3>
+                <br>
+                <p>
+                    Stay updated with our latest news and offers. Subscribe to our newsletter.
+                </p>
+                <form action="#" method="post">
+                    <input type="email" name="email" class="text-input subscribe-input" placeholder="Your email address...">
+                    <button type="submit" class="btn btn-big">
+                        <i class="fa fa-envelope"></i>
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom" data-aos="fade-in">
+            &copy; 2023 Team Lighthouse | Designed by Lighthouse Team
+        </div>
+    </div>
+    </footer>
+    
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/extrenaljq.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+<script>
+
+document.getElementById('signOut').addEventListener('click', (e) => {
+  e.preventDefault();
+  firebase.auth().signOut().then(() => {
+    alert('Signed Out');
+    window.location.href = 'index.html'; // Redirect to home page
+  }).catch((error) => {
+    alert(error.message);
+  });
+});
+
+</script>
+
+
+</body>
+<!-- Your web app's Firebase configuration -->
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyC2BwdRgZD-UldpuLUaGgmPBCoDjXdpeTY",
+      authDomain: "lighthouse-7e45a.firebaseapp.com",
+      projectId: "lighthouse-7e45a",
+      storageBucket: "lighthouse-7e45a.appspot.com",
+      messagingSenderId: "1028941914777",
+      appId: "1:1028941914777:web:8cd8f85df1dee1028f4e08",
+      measurementId: "G-K8WZRQDB55"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+
+</html>
