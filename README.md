@@ -51,14 +51,6 @@ These instructions will get you a copy of the project up and running on your loc
 - **JavaScript**: For interactive features.
 - **Google Maps API**: For location services and maps.
 
-## 📷 Screenshots
-
-### Home Page
-![Home Page](https://via.placeholder.com/800x400?text=Home+Page)
-
-### Destination Page
-![Destination Page](https://via.placeholder.com/800x400?text=Destination+Page)
-
 ## 💻 Demo
 
 You can check out the live demo [here](#). 
@@ -85,5 +77,3 @@ Feel free to reach out for any questions or collaborations!
 ---
 
 Made with ❤️ by [LightHouse](https://github.com/your-username)
-
-![Footer](https://via.placeholder.com/1200x200?text=Happy+Travels+from+LightHouse)
